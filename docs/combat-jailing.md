@@ -31,13 +31,15 @@ Certain craftable items can be used on someone who is knocked out in order to li
 There are two different types of shackles: (1) **handcuffs**, which go on people’s chest slots; and (2) **shackles**, which go on people’s feet slots. There are three materials that can be used to craft handcuffs and shackles: (1) **wood**, (2) **iron**, and (3) **platinum**, from weakest to strongest durability.
 
 **Handcuffs** have the following effects on people:
-- Unable to punch other entities
-- Interaction with hands will be limited
-- Able to be dragged to another location by anyone
+
+  * Unable to punch other entities
+  * Interaction with hands will be limited
+  * Able to be dragged to another location by anyone
 
 **Shackles** have the following effects on people:
-- Slowness III
-- Unable to use bending abilities that require sneaking
+
+  * Slowness III
+  * Unable to use bending abilities that require sneaking
 
 Handcuffed individuals can be **dragged** to another location. Tap sneak while looking at someone who’s handcuffed to start dragging them. They will be teleported to wherever you go. You can stop dragging them by tapping sneak on them again. Dragging will be interrupted if you take damage.
 
@@ -46,36 +48,45 @@ Shackles can be **unlocked** with the use of a **key item** that is generated wh
 Shackles can also be **lockpicked** by right-clicking on someone with a tripwire hook. This will enter you into a sort of GUI mini-game. The more durable the shackle, the harder it is to lockpick. You can’t lockpick your own shackles.
 
 There are ways to escape shackles, but most require a lot of work:
-- **Any handcuff and shackle** can take a little bit of damage if you **repeatedly left-click**, as if you’re hitting them against an object, but this won’t work for every punch and will damage you as well.
-- **Any handcuff** will take damage from holding sneak on **HeatControl** (burning/melting the handcuff).
-- **Wooden handcuffs** and shackles will take damage if you hold sneak with **FrostBreath**.
-- **Iron handcuffs and shackles** are escapable with holding sneak with any **metalbending** move.
+
+  * **Any handcuff and shackle** can take a little bit of damage if you **repeatedly left-click**, as if you’re hitting them against an object, but this won’t work for every punch and will damage you as well.
+  * **Any handcuff** will take damage from holding sneak on **HeatControl** (burning/melting the handcuff).
+  * **Wooden handcuffs** and shackles will take damage if you hold sneak with **FrostBreath**.
+  * **Iron handcuffs and shackles** are escapable with holding sneak with any **metalbending** move.
 
 Another neat item that can be placed on someone when they’re knocked out is the **gag**. This prevents people from speaking: everything they say will come out as “*muffled*”. They will also be unable to use "breath" abilities (AirBreath, FrostBreath, FlameBreath...). You can remove someone’s gag by right-clicking on them with an empty hand.
 
 ### Crafting recipes
 **Wooden handcuffs:**
-![Wooden handcuffs](wooden_handcuffs.png)
+
+![Wooden handcuffs](images/wooden_handcuffs.png)
 
 **Wooden shackles:**
-![Wooden shackles](wooden_shackles.png)
+
+![Wooden shackles](images/wooden_shackles.png)
 
 **Iron handcuffs:**
-![Iron handcuffs](iron_handcuffs.png)
+
+![Iron handcuffs](images/iron_handcuffs.png)
 
 **Iron shackles:**
-![Iron shackles](iron_shackles.png)
+
+![Iron shackles](images/iron_shackles.png)
 
 **Platinum handcuffs:**
 (Uses *platinum ingots*)
-![Platinum handcuffs](platinum_handcuffs.png)
+
+![Platinum handcuffs](images/platinum_handcuffs.png)
 
 **Platinum shackles:**
 (Uses *platinum ingots*)
-![Platinum shackles](platinum_shackles.png)
+
+![Platinum shackles](images/platinum_shackles.png)
 
 **Gag:**
-![Gag](gag.png)
+
+![Gag](images/gag.png)
 
 **Platinum ingot:**
+
 Smelt *raw platinum* (from a *platinum ore* resource node).

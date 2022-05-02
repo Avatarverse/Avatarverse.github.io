@@ -1,2 +1,7 @@
 site_name: Avatarverse Wiki
-theme: material
+theme: readthedocs
+site_url: https://Avatarverse.github.io
+nav:
+  - Home: index.md
+  - Characters: characters.md
+  - Combat and jailing: combat-jailing.md

@@ -1,5 +1,5 @@
 site_name: Avatarverse Wiki
-theme: readthedocs
+theme: mkdocs
 site_url: https://Avatarverse.github.io
 nav:
   - Home: index.md

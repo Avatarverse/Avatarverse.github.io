@@ -200,8 +200,10 @@
 <li><code>/n info</code> - displays info on whatever geofeature(s) you're in</li>
 <li><code>/n nation</code>, <code>/n n</code><ul>
 <li><code>/n n banish &lt;nation&gt; &lt;character&gt;</code> - banishes a character from a nation</li>
-<li><code>/n n createcurrency &lt;nation&gt; &lt;name&gt; &lt;material&gt; &lt;value&gt;</code> - creates a new currency for a nation</li>
+<li><code>/n n createcurrency &lt;nation&gt; &lt;name&gt; &lt;material&gt; &lt;value&gt;</code> - creates a new currency for a nation<ul>
 <li><em>(requires "Settings" nation permission)</em></li>
+</ul>
+</li>
 <li><code>/n n deny &lt;nation&gt;</code> - denies an invitation to a nation</li>
 <li><code>/n n elements</code></li>
 <li><code>/n n elements set &lt;nation&gt; &lt;elements separated by a space&gt;</code> - sets a nation's allowed elements</li>
@@ -209,23 +211,37 @@
 <li><code>/n n info &lt;nation&gt;</code> - shows info on a nation</li>
 <li><code>/n n invite &lt;nation&gt; &lt;character&gt;</code> - invites a character to join a nation</li>
 <li><em>(requires "Invite" nation permission)</em></li>
-<li><code>/n n invites &lt;nation&gt;</code> - lists outstanding invites to a nation</li>
+<li><code>/n n invites &lt;nation&gt;</code> - lists outstanding invites to a nation<ul>
 <li><em>(requires citizenship of nation)</em></li>
+</ul>
+</li>
 <li><code>/n n join &lt;nation&gt;</code> - joins a nation by accepting an invitation</li>
 <li><code>/n n leave &lt;nation&gt;</code> - leaves a nation</li>
-<li><code>/n n mint &lt;nation&gt; &lt;currency&gt; &lt;amount&gt;</code> - mints/prints a currency</li>
+<li><code>/n n mint &lt;nation&gt; &lt;currency&gt; &lt;amount&gt;</code> - mints/prints a currency<ul>
 <li><em>(requires "Mint" nation permission)</em></li>
-<li><code>/n n revoke &lt;nation&gt; &lt;character&gt;</code> - revokes an existing invitation to a nation</li>
+</ul>
+</li>
+<li><code>/n n revoke &lt;nation&gt; &lt;character&gt;</code> - revokes an existing invitation to a nation<ul>
 <li><em>(requires "Invite" nation permission)</em></li>
-<li><code>/n n setbanner &lt;nation&gt; &lt;banner-id&gt;</code> - sets a nation's banner with a valid <a href="https://www.needcoolshoes.com/banner">needcoolshoes.com</a> banner ID</li>
+</ul>
+</li>
+<li><code>/n n setbanner &lt;nation&gt; &lt;banner-id&gt;</code> - sets a nation's banner with a valid <a href="https://www.needcoolshoes.com/banner">needcoolshoes.com</a> banner ID<ul>
 <li><em>(requires "Settings" nation permission)</em></li>
-<li><code>/n n setcapital &lt;nation&gt; &lt;settlement&gt;</code> - sets a nation's capital settlement</li>
+</ul>
+</li>
+<li><code>/n n setcapital &lt;nation&gt; &lt;settlement&gt;</code> - sets a nation's capital settlement<ul>
 <li><em>(requires "Settings" nation permission)</em></li>
+</ul>
+</li>
 <li><code>/n n setcolor &lt;nation&gt; &lt;color-code&gt;</code> - sets a nation's color by hex-code</li>
-<li><code>/n n setcurrency &lt;nation&gt; &lt;currencies separated by a space&gt;</code> - sets a nation's currencies</li>
+<li><code>/n n setcurrency &lt;nation&gt; &lt;currencies separated by a space&gt;</code> - sets a nation's currencies<ul>
 <li><em>(requires "Settings" nation permission)</em></li>
-<li><code>/n n setrank &lt;nation&gt; &lt;character&gt;</code> - sets a character's rank in a nation</li>
+</ul>
+</li>
+<li><code>/n n setrank &lt;nation&gt; &lt;character&gt;</code> - sets a character's rank in a nation<ul>
 <li><em>(requires "Manage Ranks" nation permission)</em></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -263,12 +279,18 @@
 </ul>
 </li>
 <li><code>/n s whitelist</code><ul>
-<li><code>/n s whitelist add &lt;settlement&gt; &lt;character&gt;</code> - adds a character to a settlement's whitelist</li>
+<li><code>/n s whitelist add &lt;settlement&gt; &lt;character&gt;</code> - adds a character to a settlement's whitelist<ul>
 <li><em>(requires "Whitelist" nation permission)</em></li>
-<li><code>/n s whitelist list &lt;settlement&gt;</code> - lists character's in a settlement's whitelist</li>
+</ul>
+</li>
+<li><code>/n s whitelist list &lt;settlement&gt;</code> - lists character's in a settlement's whitelist<ul>
 <li><em>requires citizenship of nation</em></li>
-<li><code>/n s whitelist remove &lt;settlement&gt; &lt;character&gt;</code> - removes a character from a settlement's whitelist</li>
+</ul>
+</li>
+<li><code>/n s whitelist remove &lt;settlement&gt; &lt;character&gt;</code> - removes a character from a settlement's whitelist<ul>
 <li><em>(requires "Whitelist" nation permission)</em></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -279,16 +301,26 @@
 <li><code>/n node materials list &lt;node&gt;</code> - lists the materials offered by a node</li>
 <li><code>/n node search &lt;material&gt;</code> - lists nodes containing the given material</li>
 <li><code>/n node whitelist</code><ul>
-<li><code>/n node whitelist add &lt;node&gt; &lt;nation&gt;</code> - adds a nation to a node's whitelist</li>
+<li><code>/n node whitelist add &lt;node&gt; &lt;nation&gt;</code> - adds a nation to a node's whitelist<ul>
 <li><em>(requires "Whitelist" nation permission)</em></li>
-<li><code>/n node whitelist addall &lt;nation&gt; &lt;ally-nation&gt;</code> - adds a nation to all of your nation's nodes</li>
+</ul>
+</li>
+<li><code>/n node whitelist addall &lt;nation&gt; &lt;ally-nation&gt;</code> - adds a nation to all of your nation's nodes<ul>
 <li><em>(requires "Whitelist" nation permission)</em></li>
-<li><code>/n node whitelist list &lt;node&gt;</code> - lists a node's whitelisted nations</li>
+</ul>
+</li>
+<li><code>/n node whitelist list &lt;node&gt;</code> - lists a node's whitelisted nations<ul>
 <li><em>requires citizenship of node's nation</em></li>
-<li><code>/n node whitelist remove &lt;node&gt; &lt;nation&gt;</code> - removes a nation from a node's whitelist</li>
-<li><em>(requires "Whitelist" nation permission)</em>
-<code>/n node whitelist removeall &lt;nation&gt; &lt;other-nation&gt;</code> - removes <other-nation> from all of <nation>'s nodes</li>
+</ul>
+</li>
+<li><code>/n node whitelist remove &lt;node&gt; &lt;nation&gt;</code> - removes a nation from a node's whitelist<ul>
 <li><em>(requires "Whitelist" nation permission)</em></li>
+</ul>
+</li>
+<li><code>/n node whitelist removeall &lt;nation&gt; &lt;other-nation&gt;</code> - removes <other-nation> from all of <nation>'s nodes<ul>
+<li><em>(requires "Whitelist" nation permission)</em></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>

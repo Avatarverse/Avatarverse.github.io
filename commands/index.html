@@ -72,6 +72,8 @@
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#settlement-commands">Settlement commands</a>
     </li>
+    <li class="toctree-l3"><a class="reference internal" href="#rank-commands">Rank commands</a>
+    </li>
     <li class="toctree-l3"><a class="reference internal" href="#node-commands">Node commands</a>
     </li>
     <li class="toctree-l3"><a class="reference internal" href="#war-commands">War commands</a>
@@ -225,10 +227,6 @@
 <li><em>(requires "Settings" nation permission)</em></li>
 </ul>
 </li>
-<li><code>/n n setrank &lt;nation&gt; &lt;character&gt;</code> - sets a character's rank in a nation<ul>
-<li><em>(requires "Manage Ranks" nation permission)</em></li>
-</ul>
-</li>
 </ul>
 </li>
 </ul>
@@ -248,6 +246,10 @@
 <li><em>(requires "Manage Provinces" nation permission)</em></li>
 </ul>
 </li>
+<li><code>/n p secede &lt;province&gt;</code> - declares a province's independence from its parent nation<ul>
+<li><em>(requires province leader role)</em></li>
+</ul>
+</li>
 <li><code>/n p setbanner &lt;province&gt; &lt;banner-id&gt;</code> - sets a province's banner<ul>
 <li><em>(requires "Settings" nation permission)</em></li>
 </ul>
@@ -256,15 +258,32 @@
 <h3 id="settlement-commands">Settlement commands</h3>
 <ul>
 <li><code>/n settlement</code>, <code>/n s</code></li>
+<li><code>/n s banish &lt;settlement&gt; &lt;character&gt;</code> - banishes someone from a settlement<ul>
+<li><em>(requires "Banish" settlement permission)</em></li>
+</ul>
+</li>
+<li><code>/n s deny &lt;settlement&gt;</code> - denies an invitation to a settlement</li>
 <li><code>/n s info &lt;settlement&gt;</code> - shows info on a settlement</li>
+<li><code>/n s invite &lt;settlement&gt; &lt;character&gt;</code> - invites someone to a settlement<ul>
+<li><em>(requires "Invite" settlement permission)</em></li>
+</ul>
+</li>
+<li><code>/n s invites &lt;settlement&gt;</code> - shows outstanding invitations to a settlement<ul>
+<li><em>(requires "Invite" settlement permission)</em></li>
+</ul>
+</li>
+<li><code>/n s join &lt;settlement&gt;</code> - joins a settlement as long as you have been invited to it</li>
+<li><code>/n s leave &lt;settlement&gt;</code> - leaves a settlement</li>
 <li><code>/n s rename &lt;settlement&gt; &lt;new-name&gt;</code> - renames a settlement<ul>
 <li><em>(requires "Manage Provinces" nation permission)</em></li>
 </ul>
 </li>
+<li><code>/n s revoke &lt;settlement&gt; &lt;character&gt;</code> - revokes someone's invitation to a settlement</li>
 <li><code>/n s setbanner &lt;settlement&gt; &lt;banner-id&gt;</code> - sets a settlement's banner<ul>
 <li><em>(requires "Settings" nation permission)</em></li>
 </ul>
 </li>
+<li><code>/n s setprimary &lt;settlement&gt;</code> - sets your primary settlement</li>
 <li><code>/n s whitelist</code><ul>
 <li><code>/n s whitelist add &lt;settlement&gt; &lt;character&gt;</code> - adds a character to a settlement's whitelist<ul>
 <li><em>(requires "Whitelist" nation permission)</em></li>
@@ -281,6 +300,17 @@
 </ul>
 </li>
 </ul>
+<h3 id="rank-commands">Rank commands</h3>
+<p><strong>Nations</strong>, <strong>Provinces</strong>, and <strong>Settlements</strong> all have individual ranking systems, controlled by their own set of subcommands. In this section, I will use the character "<em>" as a placeholder for n, p, and s for nation, province, and settlement respectively.
+- <code>/* rank</code>, <code>/n r</code>
+  - <code>/* r create &lt;*&gt; &lt;name&gt; &lt;priority&gt;</code> - creates a new rank with name <name> and priority <priority>
+    - </em>(priority can be from 2 to 99 for nations, 2-79 for provinces, and 2-59 for settlements)*
+  - <code>/* r delete &lt;*&gt; &lt;rank&gt;</code> - deletes the rank from *
+  - <code>/* r list &lt;*&gt;</code> - lists the ranks in *
+  - <code>/* r permissions &lt;*&gt; &lt;rank&gt;</code> - opens a menu to edit a rank's permissions in *
+  - <code>/* r priority &lt;*&gt; &lt;rank&gt; [priority]</code> - sets a rank's priority, or displays the current priority if [priority] is omitted
+  - <code>/* r rename &lt;*&gt; &lt;rank&gt; &lt;newname&gt;</code> - renames a rank
+  - <code>/* r set &lt;*&gt; &lt;character&gt;</code> - opens a menu to set a character's ranks</p>
 <h3 id="node-commands">Node commands</h3>
 <ul>
 <li><code>/n node</code></li>

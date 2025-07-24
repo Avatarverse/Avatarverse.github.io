@@ -160,13 +160,14 @@
                 <h4>Current Mobs</h4>
                 <p>The Avatar world is full of entertaining creatures, many of which we plan to add, but right now we
                     are limited to the following:</p>
-                <h5 class="bold">Tameable, not buyable</h5>
+                <h5 class="bold">Tamed/unlocked, not buyable</h5>
                 <ul class="circleList">
                     <li>Sky Bison</li>
+                    <li>Dragon</li>
+                    <li>Badgermole</li>
                     <li>Polar Bear Dog</li>
                     <li>Winged Lemur</li>
                     <li>Ostrich Horse</li>
-                    <li>Dragon</li>
                 </ul>
                 <h5 class="bold">Tameable and buyable</h5>
                 <ul class="circleList">
@@ -179,6 +180,10 @@
                     <li>Flying Dolphin</li>
                     <li>Bear</li>
                     <li>Cat Deer</li>
+                </ul>
+                <h5 class="bold">Buyable with Yuans (in game)</h5>
+                <ul class="circleList">
+                    <li>Dragonhawk</li>
                 </ul>
                 <h5 class="bold">Buyable with Lotus Coins</h5>
                 <ul class="circleList">
@@ -273,8 +278,7 @@
                 <figure class="alignLeft smallimg">
                     <img src="../../images/mobs/mobWingedLemur.png" alt="Winged Lemur in Server">
                 </figure>
-                <p>The Winged Lemur is an adorable flying mob that spawns naturally in and around the Air Temples. Right
-                    now its only function is to follow its owner around, but more features are planned.</p>
+                <p>The Winged Lemur is an adorable flying mob that spawns naturally in and around the Air Temples. It follows its owner around as a cute pet and can even deliver mail! More features are planned.</p>
                 <div class="table">
                     <div class="tabletitle">
                         <p>Command</p>
@@ -332,7 +336,7 @@
                         <p>Arguments</p>
                     </div>
                     <div class="tableitems">
-                        <p>taelis ("leave")</p>
+                        <p>taelīs ("leave")</p>
                         <p>vīs ("go"), taelaros ("goodbye"), tae ("bye"), plunaqui ("dismissed")</p>
                         <p>Dismisses/despawns dragon</p>
                         <p></p>
@@ -363,6 +367,57 @@
                         <p>[no arg] - ejects all riders, including owner/driver <br> [others] - ejects everyone but you
                             <br> [character] - ejects the specified character
                         </p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Badgermole</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/badgermole.png" alt="Badgermole in Server">
+                </figure>
+                <p>The Badgermole is a large, burrowing creature known for its strength and tenacity. It is capable of
+                    digging through the earth to create tunnels and can be a valuable ally in combat. Badgermoles are
+                    unlocked only through application with the RPC. <a href="../reference/RPCunlock.html#badgermole">Click here to learn more</a>.</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>accept</p>
+                        <p>mount</p>
+                        <p>Allows a ride requester to mount the mob</p>
+                        <p>[no arg] - allows whoever requested, if there is only one <br> [character] - allows specified
+                            character to mount if there is more than one request</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>eject</p>
+                        <p>dismount</p>
+                        <p>Dismounts riders(s)</p>
+                        <p>[no arg] - ejects all riders, including owner/driver <br> [others] - ejects everyone but you
+                            <br> [character] - ejects the specified character
+                        </p>
+                    </div>
+                    <div class="tableitems">
+                        <p>dig</p>
+                        <p></p>
+                        <p>Activates digging mode (can also just hold space)</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>quake</p>
+                        <p></p>
+                        <p>Causes the badgermole to perform a quake attack, damaging and knocking back nearby entities</p>
+                        <p></p>
                     </div>
                 </div>
             </section>
@@ -474,6 +529,72 @@
             </section>
 
             <section>
+                <h4>Fire Ferret</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/mobFireFerret.png" alt="Fire Ferret in Server">
+                </figure>
+                <p>The Fire Ferret is a small, cute, and fiery pet that follows its owner around. It has 7 hearts of
+                    health and can be fed to gain energy. It does not spawn naturally and can only be purchased in <a
+                        href="https://store.avatarverse.net/category/mobs">the Store</a>.</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>balance</p>
+                        <p></p>
+                        <p>Performs the "balance" trick</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>somersault</p>
+                        <p></p>
+                        <p>Performs the "somersault" trick</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>backsomersault</p>
+                        <p></p>
+                        <p>Performs the "backsomersault" trick</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>bridge</p>
+                        <p></p>
+                        <p>Performs the "bridge" trick</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>handstand</p>
+                        <p></p>
+                        <p>Performs the "handstand" trick</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>backflip</p>
+                        <p></p>
+                        <p>Performs the "backflip" trick</p>
+                        <p></p>
+                    </div>
+                    <div class="tableitems">
+                        <p>twirl</p>
+                        <p></p>
+                        <p>Performs the "twirl" trick</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
                 <h4>Bear</h4>
                 <figure class="alignLeft smallimg">
                     <img src="../../images/mobs/mobBear.png" alt="Bear in Server">
@@ -552,6 +673,174 @@
                     </div>
                 </div>
             </section>
+
+            <section>
+                <h4>Dragonhawk</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/dragonhawk_icon.png" alt="Dragonhawk in Server">
+                    <img src="../../images/mobs/baby_dragonhawk_icon.png" alt="Baby Dragonhawk in Server">
+                </figure>
+                <p>The Dragonhawk is a majestic bird that is mainly used for delivering mail. It has several variations and a distinctive baby/juvenile model. You can buy dragonhawks with Yuans at the Supāno Menagerie on the island of Supāno.</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Tundra Dragonhawk</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/tundra_dragonhawk_icon.png" alt="Tundra Dragonhawk in Server">
+                    <img src="../../images/mobs/baby_tundra_dragonhawk_icon.png" alt="Baby Tundra Dragonhawk in Server">
+                </figure>
+                <p>The Tundra Dragonhawk is a variant of the Dragonhawk that is native to the tundras of the Northern and Southern Water Tribes. It has a distinctive blue and white color scheme and a baby/juvenile model. You can buy tundra dragonhawks with Yuans at the Supāno Menagerie on the island of Supāno.</p>
+                <p>Specialties: Defense & Stealth</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Forest Dragonhawk</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/forest_dragonhawk_icon.png" alt="Forest Dragonhawk in Server">
+                    <img src="../../images/mobs/baby_forest_dragonhawk_icon.png" alt="Baby Forest Dragonhawk in Server">
+                </figure>
+                <p>The Forest Dragonhawk is a variant of the Dragonhawk that is native to the forests of the Earth Kingdom. It has a green and brown color scheme and a baby/juvenile model. You can buy forest dragonhawks with Yuans at the Supāno Menagerie on the island of Supāno.</p>
+                <p>Specialties: Stealth</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Desert Dragonhawk</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/desert_dragonhawk_icon.png" alt="Desert Dragonhawk in Server">
+                    <img src="../../images/mobs/baby_desert_dragonhawk_icon.png" alt="Baby Desert Dragonhawk in Server">
+                </figure>
+                <p>The Desert Dragonhawk is a variant of the Dragonhawk that is native to the Si Wong desert. It has a sandy brown color scheme and a baby/juvenile model. You can buy desert dragonhawks with Yuans at the Supāno Menagerie on the island of Supāno.</p>
+                <p>Specialties: Stamina & Stealth</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Volcanic Dragonhawk</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/volcanic_dragonhawk_icon.png" alt="Volcanic Dragonhawk in Server">
+                    <img src="../../images/mobs/baby_volcanic_dragonhawk_icon.png" alt="Baby Volcanic Dragonhawk in Server">
+                </figure>
+                <p>The Volcanic Dragonhawk is a variant of the Dragonhawk that is native to the volcanic regions of the Fire Nation. It has a fiery red and orange color scheme and a baby/juvenile model. You can buy volcanic dragonhawks with Yuans at the Supāno Menagerie on the island of Supāno. In the future, the volcanic dragonhawks will be the only dragonhawks who fight back against attackers, including the raven eagle.</p>
+                <p>Specialties: Offense & Defense</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Tropical Dragonhawk</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/tropical_dragonhawk_icon.png" alt="Tropical Dragonhawk in Server">
+                    <img src="../../images/mobs/baby_tropical_dragonhawk_icon.png" alt="Baby Tropical Dragonhawk in Server">
+                </figure>
+                <p>The Tropical Dragonhawk is a variant of the Dragonhawk that is native to the tropical regions of the world. It has a vibrant cyan and yellow color scheme and a baby/juvenile model. You can buy tropical dragonhawks with Yuans at the Supāno Menagerie on the island of Supāno.</p>
+                <p>Specialties: Stamina & Defense</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h4>Noble Dragonhawk</h4>
+                <figure class="alignLeft smallimg">
+                    <img src="../../images/mobs/noble_dragonhawk_icon.png" alt="Noble Dragonhawk in Server">
+                    <img src="../../images/mobs/baby_noble_dragonhawk_icon.png" alt="Baby Noble Dragonhawk in Server">
+                </figure>
+                <p>The Noble Dragonhawk is a rare and majestic variant of the Dragonhawk that has been bred for its size and strength. It is a deep burgundy color. It is capable of carrying up to 3 items at once and can be purchased in the Supāno Menagerie on the island of Supāno.</p>
+                <p>Specialties: Defense</p>
+                <div class="table">
+                    <div class="tabletitle">
+                        <p>Command</p>
+                        <p>Aliases</p>
+                        <p>Description</p>
+                        <p>Arguments</p>
+                    </div>
+                    <div class="tableitems">
+                        <p>leave</p>
+                        <p>go, goodbye, bye, dismissed</p>
+                        <p>Dismisses/despawns mob</p>
+                        <p></p>
+                    </div>
+                </div>
+            </section>
+
             <section>
                 <h4>Rainbow Bird</h4>
                 <figure class="alignLeft smallimg">

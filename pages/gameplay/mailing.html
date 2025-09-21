@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../styles/main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Monda&display=swap">
     <script src="https://kit.fontawesome.com/dd8e71c06a.js" crossorigin="anonymous"></script>
-    <title>Celestial Events - Avatarverse Wiki</title>
+    <title>Property - Avatarverse Wiki</title>
     <link rel="icon" type="image/x-icon" href="../../images/favicon.ico">
 </head>
 
@@ -52,8 +52,8 @@
                     <li><a href="../gameplay/items.html">Items & Assets</a></li>
                     <li><a href="../gameplay/shops.html">Shops</a></li>
                     <li><a href="../gameplay/property.html">Property</a></li>
-                    <li><a href="../gameplay/mailing.html">Mailing</a></li>
-                    <li><a href="../gameplay/celestialevents.html" class="selectedgreen">Celestial Events</a></li>
+                    <li><a href="../gameplay/mailing.html" class="selectedgreen">Mailing</a></li>
+                    <li><a href="../gameplay/celestialevents.html">Celestial Events</a></li>
                     <li><a href="../gameplay/pvp.html">PvP Server</a></li>
                     <li><a href="../gameplay/creative.html">Creative Server</a></li>
                 </ul>
@@ -96,19 +96,35 @@
         </nav>
 
         <main>
-            <h3>Celestial Events</h3>
+            <h3>Mailing</h3>
             <p>
-                Celestial Events are periodical events that occur in the Avatarverse world. These events are
-                activated automatically and run on a certain schedule, which is kept secret but can be observed
-                and calculated by players. These celestial events have major consequences on the world and its
-                benders, and can be beneficial or detrimental depending on the event.
+                Avatarverse uses an immersive mailing system that allows players to send and receive mail in-game through use of
+                courier mobs and personal mailboxes.
             </p>
-            <ul class="circleList">
-                <li><span class="selectedblue">Full Moon</span>: Occurs every in-game month and greatly enhances waterbending</li>
-                <li><span class="selectedorange">Comet</span>: A miniature version of Sozin's comet which occurs periodically and greatly enhances firebending</li>
-                <li><span class="selectedred">Solar Eclipse</span>: An eclipse that blocks the sun, and by extension, all firebending</li>
-                <li><span class="selectedpurple">Lunar Eclipse</span>: An eclipse that blocks the moon, and by extension, all waterbending</li>
-            </ul>
+            <section>
+                <h4>Character Commands</h4>
+                <p>You can reference a list of character and mail related commands <a href="../reference/commands.html#characters">here</a></p>
+            </section>
+
+            <h3>Mailboxes</h3>
+            <p>Avatarverse makes use of a custom plugin in order to enhance the Roleplay and Gameplay
+                experience. The mailing system provides you with the ability to send items to a specified character, assuming they also have a mailbox set up</p>
+            <section>
+                <h4>Creating a Mailbox</h4>
+                <ul>
+                    <li>Place a sign somewhere in a property where that character has permissions (as the owner or a trusted member)</li>
+                    <li>On the first line, write <span class="cmd">[Mailbox]</span></li>
+                    <li>On the second line, give the mailbox a name to identify it by (ex. Office Mailbox)</li>
+                </ul>
+                <figure class="alignCentre">
+                    <img src="../../images/mailing/mailbox.png" alt="Mailbox Setup">
+                </figure>
+            </section>
+            <section>
+                <h4>Sending Mail</h4>
+                <p>You can send mail to another character by running the command <span class="cmd">/mail CharacterName</span> or <span class="cmd">/mail username:CharacterName</span> for offline characters. </p>
+            </section>
+
         </main>
     </div>
 
